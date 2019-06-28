@@ -1,0 +1,34 @@
+
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/HelloServlet")
+public class HelloServlet extends HttpServlet {
+
+    public HelloServlet() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter out = response.getWriter();
+		out.Println("<HTML>");
+		out.Println("<BODY>");
+		out.printls(<H3>Hello Servlet</H3>);
+		out.Prinln(""</HTML>")
+		out.Println("</body>")
+	}
+(HttpServletRequest request, HttpServletResponse response)
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrubtWriter out = response. getWrite();
+		get.println)("<HTML>");
+		get PrintU;out,println<"Jourintpmlmt"
+	Println)"<BODY>");
+		doGet(request, response);
+
+}
