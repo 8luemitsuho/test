@@ -43,7 +43,7 @@ public class MySQLServlet extends HttpServlet {
 			conn = DriverManager.getConnection(url, user, password);
 
 			Statement stmt = conn.createStatement();
-			String sql = "SELECT * FROM test_table;";
+			String sql = "SELECT * FROM test_table";
 			ResultSet rs = stmt.executeQuery(sql);
 
 			while(rs.next()) {
@@ -52,7 +52,7 @@ public class MySQLServlet extends HttpServlet {
 				String userPassword = rs.getString("password");
 				out.println("<p>");
 				out.println("ユーザーID:"+ userId +", ユーザー名:"+ userName +", パスワード:"+ userPassword);
-				out.println("<p>");
+				out.println("</p>");
 			}
 
 			rs.close();
@@ -64,9 +64,9 @@ public class MySQLServlet extends HttpServlet {
 	} catch (Exception e) {
 		out.println("Exception:" + e.getMessage());
 
-	}finally {
+	} finally {
 		try {
-			if (conn !=null) {
+			if (conn != null) {
 				conn.close();
 			}
 		} catch (SQLException e) {
