@@ -1,2 +1,3 @@
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="0">\r\n<system/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n</web-browsers>
 eclipse.preferences.version=1
-internalWebBrowserHistory=http\://localhost\:8080/login/|*|
+internalWebBrowserHistory=http\://localhost\:8080/login/LoginAction.action;jsessionid\=6753F8385B39056D9B28695D869DAFF2|*|http\://localhost\:8080/login/|*|

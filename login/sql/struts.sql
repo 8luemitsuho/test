@@ -1,8 +1,8 @@
 set names utf8;
-set foreign_key_check = 0;
-drop database if exists logindb terasaki;
+set foreign_key_checks = 0;
+drop database if exists logindb_terasaki;
 create database logindb_terasaki;
-use login_terasaki;
+use logindb_terasaki;
 
 create table user(
 id int,
