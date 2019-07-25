@@ -1,0 +1,19 @@
+package com.internousdev.webproj2.dao;
+
+import com.internousdev.webproj2.util.DBConnector;
+
+public class LoginDAO {
+	public String username;
+	public String password;
+
+	public boolean select(String username,String password) {
+		boolean ret = false;
+		DBConnector con = db.getConnection();
+
+		String sql = "select * from users user_name=? and password=?";
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+
+		}
+	}
+}
