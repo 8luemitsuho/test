@@ -24,8 +24,20 @@ org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UT
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="SLF4J \u30ED\u30B0\u5BA3\u8A00" enabled\="true" name\="log">${\:import(org.slf4j.Logger, org.slf4j.LoggerFactory)}/** \u30ED\u30AC\u30FC */&\#13;\r\nprivate static final Logger log \= LoggerFactory.getLogger(${enclosing_type}.class);</template></templates>
 org.eclipse.jdt.ui.text.templates_migrated=true
 org.eclipse.jdt.ui.typefilter.enabled=java.awt.List;
-org.eclipse.jface.textfont=1|\u30E1\u30A4\u30EA\u30AA|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-128|3|2|1|50|\u30E1\u30A4\u30EA\u30AA;
+org.eclipse.jface.textfont=1|\uFF2D\uFF33 \u30B4\u30B7\u30C3\u30AF|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|\uFF2D\uFF33 \u30B4\u30B7\u30C3\u30AF;
 proposalOrderMigrated=true
+semanticHighlighting.localVariable.color=255,0,255
+semanticHighlighting.localVariable.enabled=true
+semanticHighlighting.localVariableDeclaration.color=255,0,255
+semanticHighlighting.localVariableDeclaration.enabled=true
+semanticHighlighting.parameterVariable.color=255,0,0
+semanticHighlighting.parameterVariable.enabled=true
+semanticHighlighting.staticField.bold=true
+semanticHighlighting.staticField.italic=false
+semanticHighlighting.staticFinalField.italic=false
+semanticHighlighting.staticMethodInvocation.bold=true
+semanticHighlighting.staticMethodInvocation.italic=false
+sourceHoverBackgroundColor=255,255,225
 spelling_locale_initialized=true
 stickyOccurrences=false
 tabWidthPropagated=true
