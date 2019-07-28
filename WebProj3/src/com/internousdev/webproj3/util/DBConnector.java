@@ -8,9 +8,9 @@ public class DBConnector {
 	/**
 	 * JDBC ドライバー名
 	 */
-	private static String driverName = "com.mysql.jdbc.driver";
-	/*
-	 * データベース URL
+	private static String driverName = "com.mysql.jdbc.Driver";
+	/**
+	 * データベース接続 URL
 	 */
 	private static String url = "jdbc:mysql://localhost/testdb";
 	/**

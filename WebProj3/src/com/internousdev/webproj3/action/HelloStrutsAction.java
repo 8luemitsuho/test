@@ -1,28 +1,24 @@
 package com.internousdev.webproj3.action;
-
 import com.internousdev.webproj3.dao.HelloStrutsDAO;
 import com.internousdev.webproj3.dto.HelloStrutsDTO;
 import com.opensymphony.xwork2.ActionSupport;
-
 public class HelloStrutsAction extends ActionSupport {
-
 	private String result;
-
 	public String execute() {
-		String ret = ERROR;
-		HelloStrutsDAO dao = new HelloStrutsDAO();
-		HelloStrutsDTO dto = new HelloStrutsDTO();
+		String ret=ERROR;
+		HelloStrutsDAO dao=new HelloStrutsDAO();
+		HelloStrutsDTO dto=new HelloStrutsDTO();
 
-		dto = dao.select();
+		dto=dao.select();
 
 		System.out.println(dto.getResult());
 
-		result = dto.getResult();
+		result=dto.getResult();
 
-		if(result.equals("MYSQLと接続できます。")) {
-			ret = SUCCESS;
+		if(result.equals("MySQLと接続できます。")){
+			ret=SUCCESS;
 		} else {
-			ret = ERROR;
+			ret=ERROR;
 		}
 		return ret;
 	}
