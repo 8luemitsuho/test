@@ -3,27 +3,32 @@ package com.internousdev.webproj4.action;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.internousdev.webproj4.dao.LoginDAO;
+import com.internousdev.webproj4.dao.TestDAO;
 import com.internousdev.webproj4.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class LoginAction extends ActionSupport {
+public class TestAction extends ActionSupport {
+
 	private String username;
+
 	private String password;
+
 	private List<LoginDTO> loginDTOList = new ArrayList<LoginDTO>();
 
 	public String execute() {
-		String ret=ERROR;
-		System.out.println(username);
-		System.out.println(password);
-		LoginDAO dao=new LoginDAO();
+		String ret = ERROR;
 
-		loginDTOList=dao.select(username, password);
-		if(this.username.equals(loginDTOList.get(0).getUsername()) && this.password.equals(loginDTOList.get(0).getPassword())){
-			ret= SUCCESS;
-		}else{
-			ret=ERROR;
+		TestDAO dao = new TestDAO();
+		int count = dao.insert(username, password);
+
+		if (count > 0) {
+			ret = SUCCESS;
+		} else {
+			ret = ERROR;
 		}
+
+		loginDTOList = dao.select(username, password);
+
 		return ret;
 	}
 
@@ -50,5 +55,4 @@ public class LoginAction extends ActionSupport {
 	public void setLoginDTOList(List<LoginDTO> loginDTOList) {
 		this.loginDTOList = loginDTOList;
 	}
-
 }

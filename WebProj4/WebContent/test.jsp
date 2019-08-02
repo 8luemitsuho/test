@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta  charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
-<title>LOGIN</title>
+<title>TEST</title>
 </head>
 <body>
-
-<s:property value="LoginDTOList.get(0).username"/>さん、ようこそ！
+<br>
+<h1>以下の新規ユーザーが登録されました。</h1>
 
 <br>
 <table>
@@ -18,12 +18,14 @@
   <th>USERNAME</th>
   <th>PASSWORD</th>
 </tr>
-<tr>
+
 <s:iterator value="loginDTOList">
-  <td><s:property value="username"/></td>
-  <td><s:property value="password"/></td>
+  <tr>
+    <td><s:property value="username"/></td>
+    <td><s:property value="password"/></td>
+  </tr>
 </s:iterator>
-</tr>
+
 </tbody>
 </table>
 
