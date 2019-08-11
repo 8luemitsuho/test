@@ -1,4 +1,4 @@
-package com.internous.dev.webproj5.action;
+package com.internousdev.template.action;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class HelloStrutsAction
+ * Servlet implementation class HomeAction
  */
-@WebServlet("/HelloStrutsAction")
-public class HelloStrutsAction extends HttpServlet {
+@WebServlet("/HomeAction")
+public class HomeAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloStrutsAction() {
+    public HomeAction() {
         super();
         // TODO Auto-generated constructor stub
     }
