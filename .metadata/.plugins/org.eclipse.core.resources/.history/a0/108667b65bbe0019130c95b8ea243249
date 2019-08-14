@@ -1,0 +1,18 @@
+package com.internousdev.template.dto;
+
+public class LoginDTO {
+	private String loginId;
+	private String loginPassword;
+	private String userName;
+	private boolean loginFlg = false;
+
+	public String getLoginId() {
+		return loginId;
+	}
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
+	try {
+		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+	}
+}
