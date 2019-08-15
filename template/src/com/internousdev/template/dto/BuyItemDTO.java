@@ -11,7 +11,7 @@ public class BuyItemDTO {
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
-	public String getItemPrive() {
+	public String getItemPrice() {
 		return itemPrice;
 	}
 	public void setItemPrice(String itemPrice) {
