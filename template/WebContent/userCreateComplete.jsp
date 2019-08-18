@@ -4,14 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="Content-Style-Type" content="text/css"/>
+	<meta http-equiv="Content-Script-Type" content="text/javascript"/>
 	<meta http-equiv="imagetoolbar" content="no"/>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 	<title>UserCreateComplete画面</title>
-	
+
 	<style type="text/css">
 	/*=======TAG LAYOUT=======*/
 	body {
@@ -40,6 +40,11 @@
 		background-color: black;
 	}
 	#main {
+		width: 100%;
+		height: 500px;
+		text-align: center;
+	}
+	#footer {
 		width: 100%;
 		height: 80px;
 		background-color: black;

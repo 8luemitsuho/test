@@ -13,7 +13,7 @@ public class BuyItemDAO {
 		Connection connection = dbConnector.getConnection();
 		BuyItemDTO buyItemDTO = new BuyItemDTO();
 
-		String sql = "SELECT id,item_name, item_pruice FROM item_info_transction";
+		String sql = "SELECT id,item_name, item_price FROM item_info_transaction";
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet resultSet  = preparedStatement.executeQuery();
