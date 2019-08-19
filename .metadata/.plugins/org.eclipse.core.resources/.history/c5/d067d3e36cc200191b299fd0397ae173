@@ -1,0 +1,18 @@
+package com.internousdev.template.dto;
+
+public class MypageDTO {
+	private String itemName;
+	private String totalPrice;
+	private String totalCount;
+	private String payment;
+
+	public String getItemName() {
+		return this.itemName;
+	}
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+	public String getTotalPrice() {
+		return this,totalPrice;
+	}
+}
