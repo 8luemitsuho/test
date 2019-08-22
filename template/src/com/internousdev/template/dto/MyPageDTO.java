@@ -16,7 +16,7 @@ public class MyPageDTO {
 		return this.totalPrice;
 	}
 	public void setTotalPrice(String totalPrice) {
-		this.totalCount = totalPrice;
+		this.totalPrice = totalPrice;
 		}
 	public String getTotalCount() {
 		return this.totalCount;
