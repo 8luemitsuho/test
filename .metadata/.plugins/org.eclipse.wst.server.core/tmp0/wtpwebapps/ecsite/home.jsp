@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta http-equiv="Content-Style-Type" content="text/css"/>
 	<meta http-equiv="Content-Script-Type" content="text/javascript"/>
 	<meta http-equiv="imagetoolbar" content="no"/>
@@ -70,7 +70,7 @@
 			</s:form>
 			<s:if test="#session.login_user_id !=null">
 				<p>ログアウトする場合は
-				<a href='<s:url action="LogoutAction" />'>こちら</a></p>
+					<a href='<s:url action="LogoutAction" />'>こちら</a></p>
 			</s:if>
 		</div>
 	</div>
