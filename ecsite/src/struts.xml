@@ -52,5 +52,16 @@
 			<result name="success">buyItemComplete.jsp</result>
 			<result name="back">buyItem.jsp</result>
 		</action>
+
+		<!-- MyPageAction -->
+		<action name="MyPageAction" class="com.internousdev.ecsite.action.MyPageAction" method="execute">
+			<result name="success">myPage.jsp</result>
+			<result name="error">home.jsp</result>
+		</action>
+
+		<!-- LogoutAction -->
+		<action name="LogoutAction" class="com.internousdev.ecsite.action.LogoutAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
 	</package>
 </struts>
