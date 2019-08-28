@@ -1,0 +1,24 @@
+package com.internousdev.ecsite.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.SessionAware;
+import com.internousdev.ecsite.dao.BuyItemCompleteDAO;
+import java.sql.SQLException;
+import java.util.Map;
+
+public class BuyItemConfirmAction extends ActionSupport implements SessionAware {
+	public Map<String, Object> session;
+	private BuyItemCompleteDAO buyItemCompleteDAO = new buyItemCompleteDAO();
+
+	public String excute() throws SQLException {
+		buyItemCompleteDAO.buyItemInfo(
+				session.get("id").toString(),
+				session.get("total_price").toString(),
+				session.get("count").toString(),
+				session.get("login_user_id").toString(),
+				session.get("pay").toString()
+				);
+
+	}
+
+}

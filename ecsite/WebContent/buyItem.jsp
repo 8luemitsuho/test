@@ -31,7 +31,7 @@
 	/*=========ID LAYOUT========*/
 	#top {
 		width: 780px;
-		margin: 30px solid #333;
+		margin: 30px auto;
 		border: 1px solid #333;
 	}
 	#header {
